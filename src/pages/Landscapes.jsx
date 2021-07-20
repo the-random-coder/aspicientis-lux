@@ -13,8 +13,8 @@ const Landscapes = () => {
         <>
             <Story title="Ireland" size="small">
                 <Paragraph>
-                    When it comes to landscapes, Ireland is the place to be. With hills, the ocean, beaches, curvy roads, it is everything you need.
-                    Ireland is one of the most beautiful countries of the world, maybe the most beautiful one.
+                    When it comes to landscapes, Ireland is the place to be. With hills, the ocean, beaches, curvy roads, it is everything you can dream for.
+                    Ireland is just one of the most beautiful countries of the world, maybe the most beautiful one.
                     The only, only thing is: the weather. Rain, drizzle, and clouds.
                     There is always a threat lurking to ruin your picture.
                     As they say: climate is what you expect, weather is what you get.
@@ -25,7 +25,7 @@ const Landscapes = () => {
             <Story title="The Alps" size="small">
                 <Paragraph>
                     Ireland is facing some serious competition though. When it comes to high mountains or snow, the Alps will be on top.
-                    It doesn't matter if you are in Swiss, France, Italy or Austria, the Alps are just magnificent!
+                    It doesn't matter if you are in Swiss, France, Italy or Austria, the Alps are simple magnificent!
                 </Paragraph>
             </Story>
             <PhotoGrid images={images.alps} />
@@ -33,7 +33,7 @@ const Landscapes = () => {
             <Story title="Iceland" size="small">
                 <Paragraph>
                     In the middle of the Atlantic, several hours by plane from mainland Europe, an incredible isle is located: Iceland.
-                    This volcanic 'rock' features breathtaking scenery and traveling through brings you from one beautiful place to next.
+                    This volcanic 'rock' features breathtaking scenery and traveling that brings you from one beautiful place to the next.
                     However, the roads are not for the faint of heart: a 4wd is more a necessity than a luxury since even parts of the major highway of the country are just gravel.
                 </Paragraph>
             </Story>
@@ -43,16 +43,16 @@ const Landscapes = () => {
                 <Paragraph>
                     Being a good European I have the tendency to take the 'Everything is great in the US of A' with a grain of salt.
                     But I have to admit: the natural scenery is incredible. Highway 1 or Coastal Highway is rightfully claimed to be one of the most scenic routes in the world.
-                    And with the desert and Yosemite National Park 'just around the corner', it is definitely one of the places to return to for next visit.
+                    And with the desert and Yosemite National Park 'just around the corner', it is definitely one of the places to return to for a next visit.
                 </Paragraph>
             </Story>
             <PhotoGrid images={images.usa} />
 
             <Story title="Israel" size="small">
                 <Paragraph>
-                    If you look past the political and religious issues in the Israel, you will find a country with an incredible natural beauty.
-                    From the high mountains in the north, that are covered with snow in the winter, through the hill country all the way through the desert to get to sea,
-                    the variety in the landscape can't be greater in just one or two days of travel.
+                    If you look past the political and religious issues in Israel, you will find a country with an incredible natural beauty.
+                    From the high mountains in the north, that are covered with snow in the winter, through the hill country all the way to the desert and the sea,
+                    the variety in landscapes can't be greater in just one or two days of travel.
                 </Paragraph>
                 <Paragraph>
                     <i>Note to myself: The only things is.. next time I need to bring a much better camera.</i>
@@ -64,7 +64,7 @@ const Landscapes = () => {
                 <Paragraph>
                     Looking through my window, I dream of mountains, hills, cliffs, windy road, just to be cruelly deranged by the sheer flatness of home: Holland.
                     And in times when traveling is hard I can actually dream of the less-greener grass at the other side.
-                    Still, we still can enjoy some nice scenery, that is, from time to time.
+                    Still, we can enjoy some nice scenery, that is, from time to time.
                 </Paragraph>
             </Story>
             <PhotoGrid images={images.holland} />
