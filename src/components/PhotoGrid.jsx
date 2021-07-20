@@ -4,8 +4,6 @@ import LightBox from './LightBox'
 
 const PhotoGrid = ({images, fullWidth = { thumbs : [], full : []} }) => {
 
-
-
     const [ lightBoxIndex, setLightBoxIndex ] = useState(-1)
     const [ scrollPosition, setScrollPosition ] = useState(0)
 
@@ -25,9 +23,9 @@ const PhotoGrid = ({images, fullWidth = { thumbs : [], full : []} }) => {
         <>
             {lightBoxIndex !== -1 && <LightBox onClose={onClose} index={lightBoxIndex} images={[...images.full, ...fullWidth.full]} /> }
             <Container>
-            {images.thumbs.map((img,index) => <img onClick={() => onClick(index)} className={getClasses(images.thumbs.length,index)} key={img} src={img} />)}
+            {images.thumbs.map((img,index) => <img onClick={() => onClick(index)} alt={img} className={getClasses(images.thumbs.length,index)} key={img} src={img} />)}
             </Container>
-            {fullWidth && fullWidth.thumbs.map((img,index) => <FullWidthImage onClick={() => onClick(images.thumbs.length + index)} key={img} src={img} />)}
+            {fullWidth && fullWidth.thumbs.map((img,index) => <FullWidthImage alt={img} onClick={() => onClick(images.thumbs.length + index)} key={img} src={img} />)}
         </>
     )
 }

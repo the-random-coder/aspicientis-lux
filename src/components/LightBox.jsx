@@ -25,7 +25,7 @@ const LightBox = ({index, images, onClose }) => {
                 <ArrowLeft />
             </ArrowLeftButton>
             <Container>
-                {images.map((img,index) => <Image key={img} style={{opacity : index === imageIndex ? 1 : 0}} src={img} /> ) }
+                {images.map((img,index) => <Image key={img} alt={img} style={{opacity : index === imageIndex ? 1 : 0}} src={img} /> ) }
             </Container>
             <ArrowRightButton onClick={nextImage}>
                 <ArrowRight />
