@@ -4,7 +4,10 @@ import Paragraph from "../../components/Paragraph"
 
 import ImageOne from '../../photos/birds/turdus-philomelos.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const TurdusPhilomelos = () => {
+    setMetaInformation("Turdus Philomelos", "Unexpected meeting with a Song Thrush", ImageOne, "/birds/turdus-philomelos");
     return (
         <>
             <FullWidthImage img={ImageOne} />

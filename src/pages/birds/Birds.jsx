@@ -23,7 +23,10 @@ import AnserAnser from '../../photos/birds/anser-anser.jpg'
 
 import ColumbaLiviaDomestica from '../../photos/birds/columba-livia-domestica.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const Birds = () => {
+    setMetaInformation("Bird Photography", "The beautiful world of birds", PlataleaLeucorodia, "/birds");
     return (
         <>
             <Message variant="large" header="Birds">

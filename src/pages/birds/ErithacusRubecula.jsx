@@ -7,7 +7,11 @@ import ImageOne from '../../photos/birds/erithacus-rubecula.jpg'
 import ImageTwo from '../../photos/birds/erithacus-rubecula-2.jpg'
 import ImageThree from '../../photos/birds/erithacus-rubecula-3.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const ErithacusRubecula = () => {
+
+    setMetaInformation("Erithacus Rubecula", "Robins, flying balls of feathers", ImageOne, "/birds/erithacus-rubecula");
 
     const images = [
         { src : ImageTwo, color : 'white' },

@@ -5,7 +5,10 @@ import Paragraph from "../../components/Paragraph"
 import ImageOne from '../../photos/birds/podiceps-cristatus.jpg'
 import ImageTwo from '../../photos/birds/podiceps-cristatus-2.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const PodicepsCristatus = () => {
+    setMetaInformation("Podiceps Cristatus", "Great Crested Grebe with chicks riding on his back", ImageOne, "/birds/podiceps-cristatus");
     return (
         <>
             <FullWidthImage img={ImageOne} />

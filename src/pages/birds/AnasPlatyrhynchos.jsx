@@ -5,7 +5,10 @@ import Paragraph from "../../components/Paragraph"
 import ImageOne from '../../photos/birds/anas-platyrhynchos.jpg'
 import ImageTwo from '../../photos/birds/anas-platyrhynchos-2.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const AnasPlatyrhynchos = () => {
+    setMetaInformation("Anas Platyrhynchos", "Mallard during Golden Hour", ImageOne, "/birds/anas-platyrhynchos");
     return (
         <>
             <FullWidthImage img={ImageOne} />

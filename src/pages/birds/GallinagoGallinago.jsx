@@ -4,7 +4,10 @@ import Paragraph from "../../components/Paragraph"
 
 import ImageOne from '../../photos/birds/gallinago-gallinago.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const GallinagoGallinago = () => {
+    setMetaInformation("Gallinago Gallinago", "Reflections of the Common Snipe", ImageOne, "/birds/gallinago-gallinago");
     return (
         <>
             <FullWidthImage variant="cinematic" offset="85%" img={ImageOne} />

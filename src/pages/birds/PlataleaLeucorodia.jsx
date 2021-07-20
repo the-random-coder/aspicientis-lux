@@ -5,7 +5,10 @@ import Paragraph from "../../components/Paragraph"
 import ImageOne from '../../photos/birds/platalea-leucorodia.jpg'
 import ImageTwo from '../../photos/birds/platalea-leucorodia-2.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const PlataleaLeucorodia = () => {
+    setMetaInformation("Platalea Leucorodia", "Majestic Spoonbills", ImageOne, "/birds/podiceps-cristatus");
     return (
         <>
             <FullWidthImage img={ImageOne} />

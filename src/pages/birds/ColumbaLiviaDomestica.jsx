@@ -5,7 +5,10 @@ import Paragraph from "../../components/Paragraph"
 
 import ImageOne from '../../photos/birds/columba-livia-domestica.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const ColumbaLiviaDomestica = () => {
+    setMetaInformation("Columba Livia Domestica", "Feral Pigeon - a real angry bird", ImageOne, "/birds/columba-livia-domestica.jpg");
     return (
         <>
             <FullWidthImage img={ImageOne} />

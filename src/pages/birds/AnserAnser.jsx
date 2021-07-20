@@ -4,7 +4,10 @@ import Paragraph from "../../components/Paragraph"
 
 import ImageOne from '../../photos/birds/anser-anser.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const AnserAnser = () => {
+    setMetaInformation("Anser Anser", "Greylag Goose in flight", ImageOne, "/birds/anser-anser");
     return (
         <>
             <FullWidthImage variant="cinematic" offset="bottom -100px" img={ImageOne} />

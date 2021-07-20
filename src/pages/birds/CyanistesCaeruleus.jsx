@@ -8,7 +8,10 @@ import Paragraph from "../../components/Paragraph"
 import ImageOne from '../../photos/birds/cyanistes-caeruleus.jpg'
 import ImageTwo from '../../photos/birds/cyanistes-caeruleus-2.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const CyanistesCaeruleus = () => {
+    setMetaInformation("Cyanistes Caeruleus", "Acrobatic Blue Tit", ImageOne, "/birds/cyanistes-caeruleus");
     return (
         <>
             <Flex columns={2}>

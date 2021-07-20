@@ -3,7 +3,10 @@ import Message from "../components/Message";
 import Paragraph from "../components/Paragraph";
 import Flex from "../components/Flex";
 
+import { setMetaInformation } from '../methods/meta'
+
 const Home = () => {
+    setMetaInformation("Nature Photography", "An endeavor in capturing the beauty of nature", "https://aspicientis-lux.nl/thumbnail.jpg", "");
     return (
         <>
             <Message header="An endeavor into photography..." variant ="small">

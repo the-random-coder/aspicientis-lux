@@ -5,7 +5,10 @@ import Paragraph from "../../components/Paragraph"
 import ImageOne from '../../photos/birds/cygnus-olor.jpg'
 import ImageTwo from '../../photos/birds/cygnus-olor-2.jpg'
 
+import { setMetaInformation } from '../../methods/meta'
+
 const CygnusOlor = () => {
+    setMetaInformation("Cygnus Olor", "Mute Swan in style", ImageOne, "/birds/cygnus-olor");
     return (
         <>
             <FullWidthImage img={ImageOne} />
