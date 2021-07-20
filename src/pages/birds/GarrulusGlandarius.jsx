@@ -14,9 +14,9 @@ const TurdusPhilomelos = () => {
             <Story title="Garrulus Glandarius" subTitle="Eurasian Jay">
                 <Paragraph>
                     One of the Dutch nicknames for this bird is the "Shouting Magpie". And that is what they do!
-                    Their song is incredible distinct. Being part of the <i>Corvidae</i> (Crows) family they are very intelligent and are know for planning ahead their food reserves.
-                    Research has shown that their brain to body ratio is on of highest of all animals!
-                    For the Dutchies wondering about the washout colors, the <i>Garrulus Glandarius</i> species has several subspecies, this being a <i>Garrulus Glandarius Atricapillus</i>.
+                    Their song is incredible distinct. Being part of the <i>Corvidae</i> (Crows) family they are very intelligent and are known for planning ahead their food reserves.
+                    Research has shown that their brain to body ratio is one of highest of all animals!
+                    For the Dutchies wondering about the washed-out colors, the <i>Garrulus Glandarius</i> species has several subspecies, this being a <i>Garrulus Glandarius Atricapillus</i>.
                 </Paragraph>
             </Story>
         </>

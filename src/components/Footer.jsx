@@ -11,6 +11,7 @@ const Footer = () => {
                 <Links>
                     <Link to="/">Home</Link>
                     <Link to="/birds">Birds</Link>
+                    <Link to="/landscapes">Landscapes</Link>
                 </Links>
                 <Arrow onClick={gotoTop}>
                     <ArrowUp />

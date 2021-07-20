@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const Home = lazy(() => import('./pages/Home'));
 const Birds = lazy(() => import('./pages/birds/Index'));
+const Landscapes = lazy(() => import('./pages/Landscapes'));
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Page>
             <Switch>
               <Route path="/birds" component={Birds} />
+              <Route path="/landscapes" component={Landscapes} />
               <Route path="/" component={Home} />
             </Switch>
           </Page>

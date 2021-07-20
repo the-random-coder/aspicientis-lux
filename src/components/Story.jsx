@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 import Message from "./Message";
 
-const Story = ({title, subTitle, children}) => {
+const Story = ({title, subTitle, children, size}) => {
     return (
-        <Message header={title} variant="italic">
-            <SubTitle>{subTitle}</SubTitle>
+        <Message size={size} header={title} variant="italic">
+            {!!subTitle && <SubTitle>{subTitle}</SubTitle>}
             {children}
         </Message>
     )

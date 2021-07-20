@@ -3,6 +3,9 @@ import Message from "../components/Message";
 import Paragraph from "../components/Paragraph";
 import Flex from "../components/Flex";
 
+import BirdImage from '../photos/birds/platalea-leucorodia.jpg'
+import LandscapeImage from '../photos/landscapes/full-size/ireland-1.jpg'
+
 import { setMetaInformation } from '../methods/meta'
 
 const Home = () => {
@@ -24,7 +27,7 @@ const Home = () => {
                         title="Birds"
                         subTitle="Magic and Majesty"
                         to="/birds"
-                        img="https://images-pw.pixieset.com/elementfield/22902569/DSC_6302-2d8de341.jpg"
+                        img={BirdImage}
                     />
                 </div>
                 <div>
@@ -32,7 +35,7 @@ const Home = () => {
                         title="Landscapes"
                         subTitle="Incredible scenery"
                         to="/landscapes"
-                        img="https://images-pw.pixieset.com/elementfield/72902569/DSC_8868-6aab1656.jpg"
+                        img={LandscapeImage}
                     />
                 </div>
             </Flex>
