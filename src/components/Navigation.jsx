@@ -10,6 +10,7 @@ const Navigation = ({setShowOverlay}) => {
             <Brand>Aspicientis Lux</Brand>
             <Section justify="flex-end">
                 <Link to="/birds">Birds</Link>
+                <Link to="/wildlife">Wildlife</Link>
                 <Link to="/landscapes">Landscapes</Link>
             </Section>
             <Hamburger onClick={() => setShowOverlay(true)} />

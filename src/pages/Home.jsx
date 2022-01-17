@@ -5,10 +5,12 @@ import Flex from "../components/Flex";
 
 import BirdImage from '../photos/birds/platalea-leucorodia.jpg'
 import LandscapeImage from '../photos/landscapes/full-size/ireland-1.jpg'
+import WildlifeImage from '../photos/wildlife/cervus-elaphus-2.jpg'
 
 import { setMetaInformation } from '../methods/meta'
 
 const Home = () => {
+    window.scrollTo(0, 0);
     setMetaInformation("Nature Photography", "An endeavor in capturing the beauty of nature", "https://aspicientis-lux.nl/thumbnail.jpg", "");
     return (
         <>
@@ -21,7 +23,7 @@ const Home = () => {
                     So, an image doesn't always have to be technical perfect. thus, what you find on these pages is a bit of my endeavors in photography and the world.
                 </Paragraph>
             </Message>
-            <Flex columns={2}>
+            <Flex columns={3}>
                 <div>
                     <PhotoLink
                         title="Birds"
@@ -30,6 +32,16 @@ const Home = () => {
                         img={BirdImage}
                     />
                 </div>
+
+                <div>
+                    <PhotoLink
+                        title="Wildlife"
+                        subTitle="The fascinating life of animals"
+                        to="/wildlife"
+                        img={WildlifeImage}
+                    />
+                </div>
+
                 <div>
                     <PhotoLink
                         title="Landscapes"

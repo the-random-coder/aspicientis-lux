@@ -24,9 +24,11 @@ const LightBox = ({index, images, onClose }) => {
             <ArrowLeftButton onClick={prevImage}>
                 <ArrowLeft />
             </ArrowLeftButton>
-            <Container>
-                {images.map((img,index) => <Image key={img} alt={img} style={{opacity : index === imageIndex ? 1 : 0}} src={img} /> ) }
-            </Container>
+            <Cover>
+                <Container>
+                    {images.map((img,index) => <Image key={img} alt={img} style={{opacity : index === imageIndex ? 1 : 0}} src={img} /> ) }
+                </Container>
+            </Cover>
             <ArrowRightButton onClick={nextImage}>
                 <ArrowRight />
             </ArrowRightButton>
@@ -34,13 +36,21 @@ const LightBox = ({index, images, onClose }) => {
     )
 }
 
+const Cover = styled.div`
+    position: absolute;
+    z-index:1;
+    width: 100vw;
+    height:100vh;
+`
+
 const ArrowButton = styled.div`
     position: absolute;
+    z-index: 10;
     top:50%;
     height: 22px;
     width: 22px;
     margin-top: 11px;
-    color: #4D4D4D;
+    color: black;
     display: none;
     cursor: pointer;
 
@@ -78,6 +88,7 @@ const CloseButton = styled(Close)`
 
     top:32px;
     right:32px;
+    z-index: 10;
 
     @media (min-width: 768px) {
         top:22px;
@@ -91,10 +102,8 @@ const CloseButton = styled(Close)`
 
 const Image = styled.div`
     position: absolute;
-    top: 60px;
-    left: 7vw;
-    width: calc(100% - 14vw);
-    height: calc(100% - 120px);
+    width: 100vw;
+    height: 100vh;
     background-image: url('${p => p.src}');
     background-size: contain;
     background-repeat: no-repeat;

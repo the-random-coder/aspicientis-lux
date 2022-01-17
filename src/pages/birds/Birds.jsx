@@ -27,6 +27,7 @@ import { setMetaInformation } from '../../methods/meta'
 
 const Birds = () => {
     setMetaInformation("Bird Photography", "The beautiful world of birds", PlataleaLeucorodia, "/birds");
+    window.scrollTo(0, 0);
     return (
         <>
             <Message variant="large" header="Birds">

@@ -7,7 +7,7 @@ import { setMetaInformation } from '../methods/meta'
 import images from '../photos/landscapes/Images'
 
 const Landscapes = () => {
-
+    window.scrollTo(0, 0);
     setMetaInformation("Landscape Photography", "Incredible scenery", "https://aspicientis-lux.nl/thumbnail.jpg", "");
     return (
         <>
