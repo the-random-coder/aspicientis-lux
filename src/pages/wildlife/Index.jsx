@@ -7,6 +7,7 @@ const Konik = lazy(() => import('./Konik'));
 const OvisOrientalis = lazy(() => import('./OvisOrientalis'));
 const PantheraLeo = lazy(() => import('./PantheraLeo'));
 const CrocutaCrocuta = lazy(() => import('./CrocutaCrocuta'));
+const Loxodonta = lazy(() => import('./Loxodonta'));
 
 const Index = () => {
     return (
@@ -16,6 +17,7 @@ const Index = () => {
             <Route path="/wildlife/ovis-orientalis" component={OvisOrientalis} />
             <Route path="/wildlife/panthera-leo" component={PantheraLeo} />
             <Route path="/wildlife/crocuta-crocuta" component={CrocutaCrocuta} />
+            <Route path="/wildlife/loxodonta" component={Loxodonta} />
             <Route path="/wildlife" component={WildLife} />
         </Switch>
     )
